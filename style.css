@@ -48,6 +48,41 @@ textarea {
 body {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-pink);
+}
+
+p {
+    display: none;
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-question {
+    text-align: left;
+    padding: 1rem 0;
 }
 
 /* Card Styling */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+
+article {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 375px;
+    margin-top: 8rem;
+}
