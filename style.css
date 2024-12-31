@@ -51,22 +51,6 @@ body {
     background-color: var(--light-pink);
 }
 
-p {
-    display: none;
-}
-
-.faq-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.faq-question {
-    text-align: left;
-    padding: 1rem 0;
-}
-
-/* Card Styling */
-
 main {
     display: flex;
     justify-content: center;
@@ -77,6 +61,12 @@ main {
     background-size: 100%;
 }
 
+p {
+    display: none;
+}
+
+/* Card Styling */
+
 article {
     background-color: var(--white);
     border-radius: 10px;
@@ -85,4 +75,20 @@ article {
     width: 90%;
     max-width: 375px;
     margin-top: 8rem;
+}
+
+/* Card Header */
+header {
+    display: flex;
+}
+
+/* Card Body */
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-question {
+    text-align: left;
+    padding: 1rem 0;
 }
