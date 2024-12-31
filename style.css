@@ -61,10 +61,6 @@ main {
     background-size: 100%;
 }
 
-p {
-    display: none;
-}
-
 /* Card Styling */
 
 article {
@@ -106,5 +102,21 @@ header h1 {
 
 .faq-question {
     text-align: left;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+}
+
+button {
+    color: var(--dark-purple);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 75%;
+}
+
+p {
+    color: var(--grayish-purple);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
 }
