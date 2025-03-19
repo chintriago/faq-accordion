@@ -46,7 +46,7 @@ textarea {
     font-family: inherit;
 }
 
-/* General Styles */
+/* General Styling */
 .wrapper {
     background-image: url(assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ article {
     padding: 1.5rem;
     width: 90%;
     max-width: 375px;
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
 
 /* Card Header */
@@ -127,5 +127,10 @@ p {
     .wrapper {
         background-image: url(assets/images/background-pattern-desktop.svg);
         height: 320px;
+    }
+
+    article {
+        max-width: 575px;
+        margin-top: 13rem
     }
 }
