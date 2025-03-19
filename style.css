@@ -15,7 +15,9 @@
 html,
 body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-pink);
 }
 
 img {
@@ -45,20 +47,19 @@ textarea {
 }
 
 /* General Styles */
-body {
-    font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
-    background-color: var(--light-pink);
+.wrapper {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 230px;
+    width: 100%;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/images/background-pattern-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
 }
 
 /* Card Styling */
@@ -119,4 +120,12 @@ p {
     font-weight: 400;
     line-height: 1.5;
     margin-top: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .wrapper {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        height: 320px;
+    }
 }
