@@ -49,8 +49,6 @@ textarea {
 /* General Styling */
 .wrapper {
     background-image: url(assets/images/background-pattern-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top;
     background-size: cover;
     height: 230px;
     width: 100%;
@@ -81,24 +79,30 @@ header {
 }
 
 .header-logo {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-right: 1rem;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--dark-purple);
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 /* Card Body */
+
 .faq-header {
     display: flex;
     justify-content: space-between;
     padding: .25rem 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* removes the bottom border from the last faq header in the list */
+.border-bottom-none {
+    border-bottom: none;
 }
 
 .faq-question {
@@ -110,7 +114,7 @@ button {
     color: var(--dark-purple);
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 650;
     width: 75%;
 }
 
@@ -124,13 +128,38 @@ p {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
+
+    /* General Styling */
     .wrapper {
         background-image: url(assets/images/background-pattern-desktop.svg);
-        height: 320px;
+        height: 325px;
+
     }
 
+    /* Card Styling */
     article {
-        max-width: 575px;
-        margin-top: 13rem
+        padding: 2rem 2rem 1rem;
+        max-width: 525px;
+        margin-top: 11rem
     }
-}
+
+    /* Card Header */
+    header {
+        margin: .5em 0;
+    }
+
+    .header-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Card Body */
+    button {
+        width: 90%;
+        font-size: 1.02rem;
+    }
