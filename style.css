@@ -38,7 +38,6 @@ a {
 button {
     background: none;
     border: none;
-    cursor: pointer;
 }
 
 input,
@@ -61,6 +60,9 @@ main {
 }
 
 /* Card Styling */
+.faq-answer {
+    display: none;
+}
 
 article {
     background-color: var(--white);
@@ -100,6 +102,12 @@ header h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.faq-header button,
+.faq-header img,
+.faq-item {
+    cursor: pointer;
+}
+
 /* removes the bottom border from the last faq header in the list */
 .border-bottom-none {
     border-bottom: none;
@@ -108,14 +116,16 @@ header h1 {
 .faq-question {
     text-align: left;
     padding: 1.5rem 0;
-}
-
-button {
     color: var(--dark-purple);
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 650;
     width: 75%;
+}
+
+/* need to fix so img hover makes text color change as well */
+.faq-question:active {
+    color: #b96edf;
 }
 
 p {
@@ -124,6 +134,11 @@ p {
     font-weight: 400;
     line-height: 1.5;
     margin-top: 1rem;
+}
+
+/* Javascript class */
+.active {
+    display: block;
 }
 
 /* Media Queries */
@@ -152,7 +167,6 @@ p {
         width: 35px;
         height: 35px;
     }
-
 
     header h1 {
         font-size: 3.5rem;
